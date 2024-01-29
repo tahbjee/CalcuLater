@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.user-input {
+  background-color: grey;
+  width: 200px;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number,
+.equals,
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
