@@ -40,9 +40,5 @@ If you want to contribute to this project, feel free to fork the repository and 
 
 ## Credits
 
-This project is inspired by various online tutorials and resources on building JavaScript calculators.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Odin project.
 
