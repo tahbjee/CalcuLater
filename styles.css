@@ -19,7 +19,7 @@ body {
 }
 
 .number .animateOnClick {
-  animation: shrinkAnimation 0.1s;
+  animation: Animation 0.1s;
 }
 .container {
   display: flex;
@@ -27,10 +27,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: auto;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+  width: 40em;
+
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   margin: 0 auto;
+  border: solid 0.5px #001;
 }
 
 .row {
@@ -42,9 +44,11 @@ body {
 }
 
 .user-input {
-  text-indent: 20px;
+  text-indent: 0.5em;
   direction: rtl;
   height: 100%;
+  width: 100%;
+
   font-size: 2rem;
   border-radius: 35em;
   border-style: none;
@@ -52,14 +56,16 @@ body {
   background-color: #000000;
   color: aliceblue;
   margin-bottom: 10px;
-  padding: 0 4rem;
 }
 
 .number,
 .operator,
 .clear {
-  width: 80px;
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .number {
@@ -124,8 +130,9 @@ body {
 @media all and (max-width: 570px) {
   .user-input {
     width: 60%;
-    height: 10em;
+    height: 4em;
     padding: 2.5em;
+    text-indent: 0.2em;
   }
   .container {
     margin: 0;
@@ -136,12 +143,12 @@ body {
   .number,
   .operator,
   .clear {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     margin: 0.1em;
   }
   .equals {
-    width: 2.5em;
+    width: 3em;
     height: 1em;
   }
 }

@@ -39,16 +39,17 @@ allButton.forEach((button) => {
 
 allOperators.forEach((button) => {
   button.addEventListener("click", () => {
-    if (firstNumber === "") {
+    /*    if (firstNumber === "") {
       firstNumber = userInput.value;
       operator = button.textContent;
       userInput.value = "";
-    } else {
-      firstNumber = operate(firstNumber, operator, userInput.value);
-      operator = button.textContent;
-      userInput.value = "";
-    }
+    } else { */
+    firstNumber = operate(firstNumber, operator, userInput.value);
+    operator = button.textContent;
+    userInput.value = "";
+
     button.classList.add("animateOnClick");
+    /*   }*/
   });
 });
 
