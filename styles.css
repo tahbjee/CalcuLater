@@ -6,16 +6,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0 auto;
-  padding: 1em;
-}
-@keyframes shrinkAnimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.95);
-  }
 }
 
 .number .animateOnClick {
@@ -26,35 +16,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 40em;
-
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  margin: 0 auto;
+
+  margin: auto;
   border: solid 0.5px #001;
 }
 
 .row {
-  margin: 1em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1em;
+  margin: 0.5em;
 }
 
 .user-input {
   text-indent: 0.5em;
   direction: rtl;
-  height: 100%;
-  width: 100%;
-
+  height: 8em;
+  width: 15em;
+  border-radius: 1em 0;
   font-size: 2rem;
   border-radius: 35em;
   border-style: none;
   border-radius: 10px 10px 0px 0px;
   background-color: #000000;
-  color: aliceblue;
+  color: #eee;
   margin-bottom: 10px;
 }
 
@@ -64,8 +52,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
+  font-size: 2.5em;
 }
 
 .number {
@@ -75,7 +64,6 @@ body {
   background-color: rgb(0, 0, 0);
   color: aliceblue;
   border-radius: 45em;
-  font-size: 2em;
   border: 0.5px solid black;
 }
 
@@ -86,7 +74,6 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 100%;
-  font-size: 2em;
   border: 0.5px solid black;
 }
 
@@ -98,20 +85,18 @@ body {
   border: 0.5px solid black;
   border-radius: 100%;
   color: red;
-  font-size: xx-large;
 }
 
 .equals {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  height: 80px;
+  width: 4em;
+  height: 1.5em;
   background-color: rgba(72, 244, 38, 0.824);
   border-radius: 45em;
   color: black;
   font-size: 3em;
-  margin-left: 5px;
 }
 
 .clear:hover,
@@ -128,27 +113,71 @@ body {
 }
 
 @media all and (max-width: 570px) {
+  body {
+    overflow: hidden;
+  }
   .user-input {
-    width: 60%;
-    height: 4em;
-    padding: 2.5em;
+    width: 99%;
+    height: 5em;
+
     text-indent: 0.2em;
   }
   .container {
     margin: 0;
-    width: fit-content;
-    height: 100%;
-    padding: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+
+    margin: auto;
+    border: solid 0.5px #001;
   }
   .number,
   .operator,
   .clear {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     margin: 0.1em;
   }
   .equals {
     width: 3em;
     height: 1em;
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 1em;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  backface-visibility: hidden;
+}
+
+[name="logo-linkedin"],
+[name="share-outline"],
+[name="document-outline"] {
+  height: 2em;
+  width: 2em;
+}
+
+ion-icon {
+  color: #eee;
+  font-size: 1.5em;
+  backface-visibility: hidden;
+}
+
+ion-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
+  color: #1864ab;
 }
